@@ -1,1 +1,171 @@
+/* BASIC CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #0b0f19;
+    color: #ffffff;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25 px 8%;
+}
+
+.logo span{
+    color: #8b5cf6;
+}
+
+.navlinks {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+.navlinks a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 14px;
+    transition: 0.3s;
+}
+.navlinks a:hover {
+    color: #a78bfa;
+}
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 60px 12%;
+    gap: 40px;
+}
+.hero-content {
+    max-width: 650px;
+}
+
+.intro {
+    color: #a78bfa;
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 75px);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #8b5cf6;
+}
+
+.hero h2 {
+    font-size: 22px;
+    color: #cbd5e1;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #94a3b8;
+    line-height: 1.8;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #8b5cf6;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #7c3aed;
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    border: 1px solid #8b5cf6;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background-color: #8b5cf6;
+}
+
+/* Image Placeholder */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    border: 3px solid #8b5cf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    font-weight: 700;
+    color: #a78bfa;
+    background: #151b2b;
+    box-shadow: 0 0 40px #8b5cf633;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 7%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .image-placeholder {
+        height: 200px;
+        width: 200px;
+    }
+}
