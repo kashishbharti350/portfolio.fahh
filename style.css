@@ -21,6 +21,12 @@ body {
     align-items: center;
     padding: 25px 8%;
 }
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
 
 .logo span{
     color: #8b5cf6;
@@ -40,6 +46,7 @@ body {
 .navlinks a:hover {
     color: #a78bfa;
 }
+
 /* Hero Section */
 .hero {
     min-height: 85vh;
@@ -125,7 +132,7 @@ body {
     align-items: center;
 }
 
-.image-placeholder {
+.image-wrapper {
     height: 280px;
     width: 280px;
     border-radius: 50%;
