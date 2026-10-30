@@ -178,3 +178,111 @@ header {
         width: 200px;
     }
 }
+
+/* ABOUT SECTION */
+
+.section {
+    padding: 100px 12%;
+}
+
+.about {
+    background: #0f1422;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-subtitle {
+    color: #a78bfa;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    color: white;
+}
+
+.section-heading h2 span {
+    color: #8b5cf6;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about-text h3 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.about-text p {
+    color: #aab4c8;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.about-details {
+    display: grid;
+    gap: 18px;
+}
+
+.detail-card {
+    background: #151b2b;
+    border: 1px solid #252d40;
+    padding: 22px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.detail-card:hover {
+    border-color: #8b5cf6;
+    transform: translateY(-4px);
+}
+
+.detail-number {
+    color: #8b5cf6;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.detail-card h4 {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.detail-card p {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.detail-card small {
+    color: #8b5cf6;
+}
+
+/* ABOUT MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+    .section {
+        padding: 70px 7%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+}
